@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фільми</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<div class="row">
+				<a href="./index.html" class="header__logo">
+					<img src="https://t3.ftcdn.net/jpg/02/58/24/68/360_F_258246863_sXH9BFaSavUkkZcGjkcfgqnE7QjBJ9j2.jpg">
+				</a>
+
+				<nav class="row">
+					<a href="./index.html">Головна</a>
+					<a href="./collections.html">Моя колекція</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+
+			<section class="slider">
+				<div class="swiper hero-slider">
+					<div class="swiper-wrapper">
+						<a href="" class="swiper-slide">
+							<img src="https://thumbs.filmix.biz/posters/5643/thumbs/w220/24-skrin-prestizh-2006_6423.jpg">
+							<h3>Престиж</h3>
+						</a>
+						<a href="" class="swiper-slide">
+							<img src="https://thumbs.filmix.biz/posters/1926/thumbs/w220/kiborgi-2017_124016.jpg">
+							<h3>Кіборгі</h3>
+						</a>
+						<a href="" class="swiper-slide">
+							<img src="https://thumbs.filmix.biz/posters/3030/thumbs/w220/neprikasaemye_2011_34099.jpg">
+							<h3>1+1</h3>
+						</a>
+						<a href="" class="swiper-slide">
+							<img
+								src="https://thumbs.filmix.biz/posters/2140/thumbs/w220/24-skrin-vlastelin-kolec-bratstvo-kolca-2001_4692.jpg">
+							<h3>Володар колець</h3>
+						</a>
+						<a href="" class="swiper-slide">
+							<img src="https://thumbs.filmix.biz/posters/4719/thumbs/w220/5w-novie-prometey-2012_38158.jpg">
+							<h3>Промітей</h3>
+						</a>
+						<a href="" class="swiper-slide">
+							<img
+								src="https://thumbs.filmix.biz/posters/2751/thumbs/w220/34f3-sherlok-holms-igra-teney-2011_30958.jpg">
+							<h3>Шерлок Холмс гра тіней</h3>
+						</a>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+
+			<section class="movies">
+				<div class="movies__category row">
+					<button id="popular-btn" class="movies__category-btn active">Популярне</button>
+					<button id="movies-btn" class="movies__category-btn">Фільми</button>
+					<button id="serials-btn" class="movies__category-btn">Серіали</button>
+					<button id="cartoons-btn" class="movies__category-btn">Мульфільми</button>
+				</div>
+
+				<div class="movies__list">
+					<div class="movies__list-movie">
+						<img src="https://thumbs.filmix.biz/posters/4719/thumbs/w220/5w-novie-prometey-2012_38158.jpg">
+						<h3>Name of film</h3>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+<div class="row">
+	<div class="footer__logo">
+<p style="color: white;">kino star</p>
+	</div>
+	<div class="row">
+<a href="https://discord.gg/uxebtTnY" class="footer_social">
+	<img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/207727602/original/bf3478b628b911f14e612708643ed9ff5d7edce7/make-you-a-discord-icon-for-your-sever.jpg" width="50x" height="50px">
+	<p>Discord</p>
+</a>
+
+<a href="https://t.me/markolutskyi" class="footer_social">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png" width="50x" height="50px">
+	<p>Telegram</p>
+</a>
+
+	</div>
+</div>
+		</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script src="./script.js"></script>
+
+	<script>
+		var swiper = new Swiper(".hero-slider", {
+			slidesPerView: "auto",
+			freeMode: true,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+
+</html>

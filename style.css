@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	background: url("./завантаження.jpg") 0 0/cover no-repeat;
+	background-attachment: fixed;
+}
+
+.container{
+	max-width: 1300px;
+	padding: 0 10px;
+	background: black;
+	margin: 0 auto;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+header{
+	padding: 10px 0;
+}
+
+.header__logo{
+	display: block;
+	width: 70px;
+	height: 50px;
+}
+
+.header__logo img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 25px;
+}
+header a{
+	color: white;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.swiper-slide{
+	width: fit-content !important;
+	margin: 0 auto;
+	padding: 15px;
+	padding-bottom: 40px;
+	text-decoration: none;
+	display: block;
+}
+
+.swiper-slide img, .movies__list img{
+	width: 220px;
+	height: 313px;
+	object-fit: cover;
+}
+
+.swiper-slide h3{
+	color: white;
+	text-align: center;
+}
+
+.swiper-pagination-bullet{
+	background: white !important;
+}
+
+.movies__category{
+	margin: 40px 0;
+	padding: 10px 0;
+	justify-content: center;
+	background: white;
+}
+
+.movies__category-btn{
+	padding: 7px 25px;
+	opacity: 0.7;
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+
+.movies__category-btn.active{
+	opacity: 1;
+}
+
+.movies__list{
+	flex-wrap: wrap;
+	display: flex;
+	gap: 20px;
+	text-align: center;
+	color: white;
+	padding-bottom: 60px;
+	justify-content: center;
+}
+
+.movies__list-movie{
+	width: 240px;
+	height: 440px;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.movies__list-movie img{
+	width: 100%;
+	border-radius: 10px;
+	height: 313px;
+	object-fit: cover;
+}
+
+.movies__list-movie a{
+	text-decoration: none;
+	padding: 7px 15px;
+	background: white;
+	color: black;
+	cursor: pointer;
+	border-radius: 15px;
+	width: 100%;
+}
+
+.add-collections{
+	width: 32px;
+	height: 30px;
+	background: url("./gray-star.png") 0 0 / cover no-repeat;
+	border: none;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.add-collections:hover{
+	transform: scale(1.05);
+}
+
+.add-collections.active{
+	background: url("./star.png") 0 0 / cover no-repeat;
+}
+
+.library{
+	color: white;
+	text-align: center;
+	min-height: calc(100vh - 70px);
+	padding-bottom: 60px;
+}
+
+.library h1{
+	margin-bottom: 35px;
+}
+
+.library__list {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+a.footer_social {
+	display: flex;
+  }
